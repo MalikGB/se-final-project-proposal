@@ -16,9 +16,11 @@ app.set('view engine', 'handlebars')
 app.use(express.static(__dirname + '/public'))
 app.use(bodyParser.json())
 
-
+/*This will load the homepage of the Website
+   However, right now it will load our proposal handlebar page
+*/
 app.get('/',(req,res)=>{
-    res.render('home')
+   res.render('home')
 })
 
 
